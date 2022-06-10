@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block title %}敏感词检测-首页{% endblock %}
+
+
+
+{% block head %}
+
+{% endblock %}
+
+
+{% block body %}
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">文本内容安全</h1>
+      <p class="lead">基于自然语言理解、深度学习等技术，有效识别违规文本内容，具备拆字识别能力；支持自定义黑白名单，可灵活调整审核策略和松紧度，更贴合当前复杂的网络环境需求</p>
+      <hr class="my-4">
+      <p>适用于文章内容审核、社区论坛留言等，对用户评论信息进行检测，一旦发现用户提交违规内容，进行自动审核与实时过滤</p>
+      <a class="btn btn-primary btn-lg" href="{{ url_for('laboratory.index') }}" role="button">立即体验</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1 class="text-center">功能介绍</h1>
+
+  </div>
+  <div class="container">
+    <div class="row mt-4  ">
+
+
+      <div class="col-4 clearfix ">
+        <div  style="width: 18rem;">
+{#          <img src="..." class="card-img-top" alt="...">#}
+          <div class="card-body">
+            <h5 class="card-title">智能鉴黄</h5>
+            <p class="card-text">识别文本中的色情行为描述、色情资源链接、低俗交友、污秽文爱等涉黄内容</p>
+{#            <a href="#" class="btn btn-primary">Go somewhere</a>#}
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-4 clearfix ">
+        <div  style="width: 18rem;">
+{#          <img src="..." class="card-img-top" alt="...">#}
+          <div class="card-body">
+            <h5 class="card-title">违禁违规</h5>
+            <p class="card-text">识别暴力行为、恐怖描述、赌博、毒品、枪支弹药等违禁文字内容</p>
+{#            <a href="#" class="btn btn-primary">Go somewhere</a>#}
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-4 clearfix  ">
+        <div  style="width: 18rem;">
+{#          <img src="..." class="card-img-top" alt="...">#}
+          <div class="card-body">
+            <h5 class="card-title">恶意推广</h5>
+            <p class="card-text">识别带有售卖意向的软文广告、微信/QQ/联系方式等违规广告，支持包含符号、图标等变异广告</p>
+{#            <a href="#" class="btn btn-primary">Go somewhere</a>#}
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row mt-4 ">
+
+
+      <div class="col-4 ">
+        <div  style="width: 18rem;">
+{#          <img src="..." class="card-img-top" alt="...">#}
+          <div class="card-body">
+            <h5 class="card-title">低俗辱骂</h5>
+            <p class="card-text">识别文本中的侮辱谩骂、人身攻击、消极宣泄等不良内容</p>
+{#            <a href="#" class="btn btn-primary">Go somewhere</a>#}
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-4 ">
+        <div  style="width: 18rem;">
+{#          <img src="..." class="card-img-top" alt="...">#}
+          <div class="card-body">
+            <h5 class="card-title">自定义类</h5>
+            <p class="card-text">支持自定义黑白名单，可灵活调整审核策略和松紧度，更贴合业务需求</p>
+{#            <a href="#" class="btn btn-primary">Go somewhere</a>#}
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4"></div>
+
+    </div>
+  </div>
+
+
+
+
+
+{% endblock %}
